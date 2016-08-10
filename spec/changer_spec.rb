@@ -2,7 +2,7 @@ require_relative '../app/lib/changer.rb'
 require 'rspec'
 
 describe Changer do
-  it 'should do math' do
-    expect(1 + 1).to eq(45)
+  it 'has a change method' do
+    expect(Changer.new.change).to eq(nil)
   end
 end
